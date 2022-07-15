@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Card itself */
+.card {
+  background-image: url(images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #fff;
+  border: 0.5px;
+  border-radius: 0.7rem;
+  font-family: "Red Hat Display", sans-serif;
+  height: 550px;
+  margin: auto;
+  width: 360px;
+}
+/* Order Summary */
+.head {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 210px;
+  font-weight: 900;
+}
+
+/* You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like! */
+.info {
+  color: var(--desaturated-blue);
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 25px;
+  max-width: 290px;
+}
+
+/* Annual Plan + $59.99/year + Change */
+.payment {
+  background-color: hsl(225, 100%, 98%);
+  background-image: url(images/icon-music.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-origin: content-box;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 80px;
+  max-width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* Annual Plan + $59.99/year */
+.container {
+  padding: 22px 0px 20px 65px;
+}
+
+/* Annual Plan */
+.plan {
+  color: var(--dark-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+  position: relative;
+}
+
+/* $59.99/year */
+.price {
+  color: var(--desaturated-blue);
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Change */
+.change {
+  color: var(--bright-blue);
+  max-height: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  position: relative;
+  top: 30px;
+  left: 70px;
+  transition: 0.3s;
+}
+
+.change:hover {
+  color: hsl(245, 58%, 80%);
+}
+
+/* Proceed to Payment */
+.payment-button {
+  background-color: var(--bright-blue);
+  border-radius: 0.7rem;
+  box-shadow: 0px 5px 30px hsl(243, 28%, 75%);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  max-height: 40px;
+  line-height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 300px;
+  transition: 0.3s;
+}
+
+.payment-button:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+  box-shadow: none;
+}
+
+.cancel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 25px;
+  text-align: center;
+  color: var(--desaturated-blue);
+  transition: 0.3s;
+}
+
+.cancel:hover {
+  color: var(--bright-blue);
+}
+
+.attribution {
+  
+}
